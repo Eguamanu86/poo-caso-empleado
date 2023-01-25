@@ -1,17 +1,18 @@
 class Persona {
-  constructor(codigo, nombre, apellido, genero, fechaNacimiento) {
-    this.codigo = codigo;
+  constructor(cedula, nombre, apellido, genero, fechaNacimiento, foto) {
+    this.cedula = cedula;
     this.nombre = nombre;
     this.apellido = apellido;
     this.genero = genero;
     this.fechaNacimiento = fechaNacimiento;
+    this.foto = foto;
   }
 }
 
 class Empleado extends Persona {
 
-  constructor(codigo, nombre, apellido, genero, fechaNacimiento, fechaIngreso, salarioBasico) {
-    super(codigo, nombre, apellido, genero, fechaNacimiento);
+  constructor(cedula, nombre, apellido, genero, fechaNacimiento, foto, fechaIngreso, salarioBasico) {
+    super(cedula, nombre, apellido, genero, fechaNacimiento, foto);
     this.fechaIngreso = fechaIngreso;
     this.salarioBasico = salarioBasico;
   }

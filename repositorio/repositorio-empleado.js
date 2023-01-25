@@ -7,4 +7,8 @@ export class RepositorioEmpleado {
     this.empleados.push(empleado)
   }
 
+  buscarEmpleado(cedula) {
+    return this.empleados.filter((item) => item.cedula === cedula).shift()
+  }
+
 }
