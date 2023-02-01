@@ -10,15 +10,6 @@ class Empleado {
    sueldo : Float
 }
 
-class Cliente {
-   cupo : Float
-   descuento : Float
-}
-class Estudiante {
-   fechaIngreso : Date
-   carrera : String
-}
-
 class RepositorioEmpleado {
     empleados : List
 
@@ -41,9 +32,6 @@ class CasoUsoEmpleado{
 
 }
 
-
 Persona <|-- Empleado
-Persona <|-- Cliente
-Persona <|-- Estudiante
 RepositorioEmpleado *-- CasoUsoEmpleado
 @enduml
